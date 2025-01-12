@@ -1,17 +1,55 @@
-# **Web Scrapper For lists**
-
 ## **Overview:**
 
-
+This script scrapes the titles of the top 100 PlayStation games from an article on IGN's website. It uses Python's `requests` library to fetch the webpage's content and the `BeautifulSoup` library from `bs4` to parse and extract the game titles. The extracted data can be used for various purposes, such as creating a list, analyzing trends, or archiving.
 
 ## **How It Works:**
 
-It takes the user input a pet name and a city name to create a band name. Nothing fancy.
+1. **Request the Webpage:**  
+   The script sends a GET request to the specified IGN article URL using the `requests` library. It includes a User-Agent header to mimic a real browser request, ensuring access to the webpage.
 
-## **Example:**
+2. **Check Response Status:**  
+   It checks the HTTP status code of the response to confirm that the request was successful (status code `200`).
 
-![alt text](https://github.com/Bosaif39/example-pics/blob/main/D_1.png?raw=true)
+3. **Parse HTML Content:**  
+   Using `BeautifulSoup`, the HTML content of the webpage is parsed into a structured format.
+
+4. **Extract Game Titles:**  
+   The script searches for all `<h2>` elements with the class `title2` that contain the titles of the PlayStation games. It then extracts and prints the text of each title.
+
+## **Example Output:**
+
+If the webpage structure matches expectations, the script will print the following (partial) output:
+
+```
+1. The Last of Us
+2. God of War
+3. Bloodborne
+...
+```
 
 ## **Requirements:**
 
-Python 3.x
+1. **Python Version:**  
+   Python 3.x is required to run this script.
+
+2. **Libraries:**  
+   - `requests`: For sending HTTP requests.  
+   - `bs4` (BeautifulSoup): For parsing and extracting HTML content.
+
+   Install these libraries using pip:
+   ```bash
+   pip install requests beautifulsoup4
+   ```
+
+## **Example:**
+
+Below is a snapshot of how the code operates:
+
+![IGN Scraper Example](https://github.com/Bosaif39/example-pics/blob/main/example-output.png?raw=true)
+
+This image demonstrates the successful extraction of game titles printed in the terminal after running the script.
+
+## **Notes:**
+
+- Ensure the URL of the article is up-to-date. If the website's structure changes, you might need to update the class or tag used for finding the titles.
+- Always comply with the terms of service of the website being scraped.
