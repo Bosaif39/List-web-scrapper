@@ -1,11 +1,15 @@
 ## **Overview:**
 
-This script scrapes the titles of the top 100 PlayStation games from an article on IGN's website. It uses Python's `requests` library to fetch the webpage's content and the `BeautifulSoup` library from `bs4` to parse and extract the game titles. The extracted data can be used for various purposes, such as creating a list, analyzing trends, or archiving.
+This script scrapes the targeted html elements from any an article to provide the list in .txt format.
+
+It uses Python's `requests` library to fetch the webpage's content and the `BeautifulSoup` library from `bs4` to parse and extract html elements.
+
+The extracted data can be used for various purposes, such as creating a list, analyzing trends, or archiving.
 
 ## **How It Works:**
 
 1. **Request the Webpage:**  
-   The script sends a GET request to the specified IGN article URL using the `requests` library. It includes a User-Agent header to mimic a real browser request, ensuring access to the webpage.
+   The script sends a GET request to the specified article URL using the `requests` library. It includes a User-Agent header to mimic a real browser request, ensuring access to the webpage.
 
 2. **Check Response Status:**  
    It checks the HTTP status code of the response to confirm that the request was successful (status code `200`).
@@ -13,10 +17,14 @@ This script scrapes the titles of the top 100 PlayStation games from an article 
 3. **Parse HTML Content:**  
    Using `BeautifulSoup`, the HTML content of the webpage is parsed into a structured format.
 
-4. **Extract Game Titles:**  
-   The script searches for all `<h2>` elements with the class `title2` that contain the titles of the PlayStation games. It then extracts and prints the text of each title.
+4. **Extract List Elements:**  
+   The script searches for all `<h2>` elements with the class `title2` that contain the elements of list. It then extracts and prints the text of each title.
+
+*Changed this based on your url.
 
 ## **Example Output:**
+
+IGN's top 100 ps games..
 
 If the webpage structure matches expectations, the script will print the following (partial) output:
 
