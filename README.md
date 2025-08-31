@@ -48,15 +48,7 @@ If the webpage structure matches expectations, the script will print the followi
    ```bash
    pip install requests beautifulsoup4
    ```
-
-## **Example:**
-
-Below is a snapshot of how the code operates:
-
-![IGN Scraper Example](https://github.com/Bosaif39/example-pics/blob/main/example-output.png?raw=true)
-
-This image demonstrates the successful extraction of game titles printed in the terminal after running the script.
-
+   
 ## **Notes:**
 
 - Ensure the URL of the article is up-to-date. If the website's structure changes, you might need to update the class or tag used for finding the titles.
