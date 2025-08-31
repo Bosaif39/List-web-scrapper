@@ -29,7 +29,7 @@ IGN's top 100 ps games..
 If the webpage structure matches expectations, the script will print the following (partial) output:
 
 ```
-1. The Last of Us
+1. Hotline Miami 
 2. God of War
 3. Bloodborne
 ...
