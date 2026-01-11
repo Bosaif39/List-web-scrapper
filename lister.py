@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 # URL of the webpage
 url = 'https://www.ign.com/articles/the-100-best-playstation-games-of-all-time/'
 
@@ -24,3 +25,4 @@ game_titles = soup.find_all('h2', class_='title2')
 # Extract and print the text from each <h2> tag
 for title in game_titles:
     print(title.get_text(strip=True))
+
