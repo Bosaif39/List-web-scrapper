@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-https://docs.google.com/document/d/1PE-k_vmalfBJqZuHaIZTbJTZQ9ifEpHZ5OzqcKUD4nY/edit?usp=drivesdk
-# URL of the webpage
+
+# URL of https webpage
 url = 'https://www.ign.com/articles/the-100-best-playstation-games-of-all-time/'
 
 # Set headers to mimic a browser request
@@ -25,5 +25,6 @@ game_titles = soup.find_all('h2', class_='title2')
 # Extract and print the text from each <h2> tag
 for title in game_titles:
     print(title.get_text(strip=True))
+
 
 
