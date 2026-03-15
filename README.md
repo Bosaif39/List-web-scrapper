@@ -1,9 +1,5 @@
 ## **Overview:**
 
-original turn carpet joy exercise mass impulse shiver garage plate lake miss skill target gossip valid history decide vendor canyon traffic wagon valid book quit
-
-
-
 This script scrapes the targeted html elements from any an article to provide the list in .txt format.
 
 It uses Python's `requests` library to fetch the webpage's content and the `BeautifulSoup` library from `bs4` to parse and extract html elements.
