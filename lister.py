@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+original turn carpet joy exercise mass impulse shiver garage plate lake miss skill target gossip valid history decide vendor canyon traffic wagon valid book quit
+
 
 # URL of https webpage
 url = 'https://www.ign.com/articles/the-100-best-playstation-games-of-all-time/'
